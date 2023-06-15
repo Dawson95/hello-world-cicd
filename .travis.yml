@@ -1,0 +1,9 @@
+language: minimal
+
+jobs:
+  include:
+    - stage: Preprod
+      name: "Preprod Deployment"
+      script:
+        - echo "Deploying to preprod..."
+        - curl -X POST -d '{}' -H 'Content-Type: application/json' -H 'Authorization: Bearer $NETLIFY_ACCESS_TOKEN' https://api.netlify.com/build_hooks/NETLIFY_PREPROD_HOOK_ID

@@ -7,3 +7,9 @@ jobs:
       script:
         - echo "Deploying to preprod..."
         - curl -X POST -d '{}' -H 'Content-Type: application/json' -H 'Authorization: Bearer $NETLIFY_ACCESS_TOKEN' https://api.netlify.com/build_hooks/NETLIFY_PREPROD_HOOK_ID
+
+    - stage: Prod
+      name: "Prod Deployment"
+      script:
+        - echo "Deploying to prod..."
+        - curl -X POST -d '{}' -H 'Content-Type: application/json' -H 'Authorization: Bearer $NETLIFY_ACCESS_TOKEN' https://api.netlify.com/build_hooks/NETLIFY_PROD_HOOK_ID

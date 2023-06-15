@@ -12,4 +12,6 @@ deploy:
   github_token: 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
   local_dir: build/
   on:
-    branch: main
+    branch:
+      - preprod
+      - prod

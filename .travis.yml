@@ -9,7 +9,7 @@ script:
 deploy:
   provider: pages
   skip_cleanup: true
-  github_token: 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
+  github_token: $GITHUB_TOKEN
   local_dir: build/
   on:
     branch:

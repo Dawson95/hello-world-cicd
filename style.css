@@ -1,0 +1,29 @@
+.cookie-consent-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: #f8f9fa;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .cookie-consent-banner p {
+    margin-bottom: 10px;
+  }
+  
+  .cookie-consent-banner button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+  
+  @media (max-width: 767px) {
+    .cookie-consent-banner {
+      padding: 10px 20px;
+    }
+  }
+  
